@@ -497,14 +497,9 @@ do
     -- You can put your default mappings / updates / etc. in here
     --  All the info you're looking for is in `:help telescope.setup()`
     --
-    -- defaults = {
-    --   mappings = {
-    --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-    --   },
-    -- },
-    pickers = {
-    find_files = {
-      find_command = { "fd", "--type", "f", "--color", "never", "--no-require-git" }
+  defaults = { 
+    file_ignore_patterns = { 
+      "node_modules" 
     }
   },
     extensions = {
@@ -700,7 +695,7 @@ do
   ---@type table<string, vim.lsp.Config>
   local servers = {
     -- clangd = {},
-    gopls = {},
+    -- gopls = {},
     -- pyright = {},
     -- rust_analyzer = {},
     --
