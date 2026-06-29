@@ -211,6 +211,7 @@ do
     },
   }
 
+  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
   vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
   -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
