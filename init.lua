@@ -109,6 +109,8 @@ do
   -- Make line numbers default
   vim.o.number = true
   vim.o.relativenumber = true
+  vim.o.shiftwidth = 4
+  vim.o.tabstop = 4
     
   -- You can also add relative line numbers, to help with jumping.
   --  Experiment for yourself to see if you like it!
@@ -396,7 +398,7 @@ do
   -- Load the colorscheme here.
   -- Like many other themes, this one has different styles, and you could load
   -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-  vim.cmd.colorscheme 'tokyonight-night'
+  vim.cmd.colorscheme 'desert'
 
   -- Highlight todo, notes, etc in comments
   vim.pack.add { gh 'folke/todo-comments.nvim' }
