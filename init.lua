@@ -387,18 +387,18 @@ do
   -- change the command under that to load whatever the name of that colorscheme is.
   --
   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-  vim.pack.add { gh 'folke/tokyonight.nvim' }
+  vim.pack.add { gh 'lunacookies/vim-colors-xcode' }
   ---@diagnostic disable-next-line: missing-fields
-  require('tokyonight').setup {
-    styles = {
-      comments = { italic = false }, -- Disable italics in comments
-    },
-  }
+  --require('tokyonight').setup {
+   -- styles = {
+     -- comments = { italic = false }, -- Disable italics in comments
+    --},
+  --}
 
   -- Load the colorscheme here.
   -- Like many other themes, this one has different styles, and you could load
   -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-  vim.cmd.colorscheme 'catppuccin'
+  vim.cmd.colorscheme 'xcode'
 
   -- Highlight todo, notes, etc in comments
   vim.pack.add { gh 'folke/todo-comments.nvim' }
