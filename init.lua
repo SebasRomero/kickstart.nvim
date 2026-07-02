@@ -106,12 +106,18 @@ do
   -- NOTE: You can change these options as you wish!
   --  For more options, you can see `:help option-list`
 
-  -- Make line numbers default
-  vim.o.number = true
+  --===============================================
+
+  vim.o.number = true -- Make line numbers default
   vim.o.relativenumber = true
   vim.o.shiftwidth = 4
+  vim.o.textwidth = 80
+  vim.o.wrap = false
+  vim.o.colorcolumn = '80'
   vim.o.tabstop = 4
-    
+
+  --===============================================
+  
   -- You can also add relative line numbers, to help with jumping.
   --  Experiment for yourself to see if you like it!
   -- vim.o.relativenumber = true
@@ -390,9 +396,9 @@ do
   vim.pack.add { gh 'lunacookies/vim-colors-xcode' }
   ---@diagnostic disable-next-line: missing-fields
   --require('tokyonight').setup {
-   -- styles = {
-     -- comments = { italic = false }, -- Disable italics in comments
-    --},
+  -- styles = {
+  -- comments = { italic = false }, -- Disable italics in comments
+  --},
   --}
 
   -- Load the colorscheme here.
@@ -499,11 +505,11 @@ do
     -- You can put your default mappings / updates / etc. in here
     --  All the info you're looking for is in `:help telescope.setup()`
     --
-  defaults = { 
-    file_ignore_patterns = { 
-      "node_modules" 
-    }
-  },
+    defaults = {
+      file_ignore_patterns = {
+        'node_modules',
+      },
+    },
     extensions = {
       ['ui-select'] = { require('telescope.themes').get_dropdown() },
     },
